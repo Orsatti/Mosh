@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mosh", "Mosh\Mosh.csproj", "{048C7394-7919-45B7-8206-0A1D7253ACF2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{249C7A6D-59B4-405C-A44E-3FAB34B56BCD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{497BE854-9844-4C4C-993D-9BFBF35FC313}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Templates", "Templates", "{77A8150A-3A9C-4881-85C6-0C7A3C84D2E1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{048C7394-7919-45B7-8206-0A1D7253ACF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{048C7394-7919-45B7-8206-0A1D7253ACF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{048C7394-7919-45B7-8206-0A1D7253ACF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{048C7394-7919-45B7-8206-0A1D7253ACF2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{497BE854-9844-4C4C-993D-9BFBF35FC313} = {249C7A6D-59B4-405C-A44E-3FAB34B56BCD}
+		{77A8150A-3A9C-4881-85C6-0C7A3C84D2E1} = {249C7A6D-59B4-405C-A44E-3FAB34B56BCD}
+	EndGlobalSection
+EndGlobal
