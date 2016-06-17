@@ -218,6 +218,10 @@
     <Compile Include="Migrations\201606162053201_populateGenres.Designer.cs">
       <DependentUpon>201606162053201_populateGenres.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201606171417065_AddForeygnKeyPropertiesToGigi.cs" />
+    <Compile Include="Migrations\201606171417065_AddForeygnKeyPropertiesToGigi.Designer.cs">
+      <DependentUpon>201606171417065_AddForeygnKeyPropertiesToGigi.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
@@ -314,6 +318,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201606162053201_populateGenres.resx">
       <DependentUpon>201606162053201_populateGenres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201606171417065_AddForeygnKeyPropertiesToGigi.resx">
+      <DependentUpon>201606171417065_AddForeygnKeyPropertiesToGigi.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
