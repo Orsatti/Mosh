@@ -29,11 +29,16 @@ namespace Mosh.Controllers
         [HttpPost]
         public ActionResult Create(GigFormViewModel viewModel)
         {
+            if (!ModelState.IsValid)
+            {
+                viewModel.Genres = db.Genres.ToList();
+                return View("Create", viewModel);
+            }
             var userId = User.Identity.GetUserId();
             var gig = new Gig
             {
                 ArtistId = userId,
-                DateTime = viewModel.DateTime,
+                DateTime = viewModel.GetDateTime(),
                 GenreId = viewModel.Genre,
                 Venue = viewModel.Venue
             };
