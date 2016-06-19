@@ -95,3 +95,8 @@ h6,
     font-weight: 700;
 }
 
+span.field-validation-error {
+    color: red;
+    font-weight: bold;
+}
+
