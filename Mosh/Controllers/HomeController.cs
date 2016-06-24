@@ -15,6 +15,7 @@ namespace Mosh.Controllers
                 .Include(g => g.Artist)
                 .Include(g => g.Genre)
                 .Where(g => g.DateTime > DateTime.Now);
+            ViewBag.ShowActions = User.Identity.IsAuthenticated;
             return View(upComingGigs);
         }
 

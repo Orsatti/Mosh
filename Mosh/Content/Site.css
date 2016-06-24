@@ -76,8 +76,8 @@ h6,
 }
 
 .btn {
-    font-size: 17px;
-    padding: 7px 20px;
+    /*font-size: 17px;
+    padding: 7px 20px;*/
     border-radius: 9px;
 }
 
@@ -135,6 +135,7 @@ span.field-validation-error {
     position: absolute;
     top: 0;
     left: 70px;
+    min-width: 130px;
 }
 
 .gigs > li > .details .artist {
@@ -144,4 +145,9 @@ span.field-validation-error {
 
 .gigs > li > .detais .genre {
     font-size: 15px;
+}
+
+/* Gristack */
+.grid-stack-item-content {
+    background-color: steelblue;
 }

@@ -1,0 +1,61 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Exemplo <button class="btn" onclick="debugger; adicionaWidget();">Adicionar</button></h2>
+
+
+<div class="row">
+    <div class="grid-stack grid-stack-animate">
+        <div class="grid-stack-item ui-draggable ui-resizable ui-resizable-autohide"
+             data-gs-x="0" data-gs-y="0"
+             data-gs-width="4" data-gs-height="2">
+            <div class="grid-stack-item-content">Lala</div>
+        </div>
+        <div class="grid-stack-item"
+             data-gs-x="4" data-gs-y="0"
+             data-gs-width="4" data-gs-height="4">
+            <div class="grid-stack-item-content">Lele</div>
+        </div>
+
+        <div class="grid-stack-item" id="div-extra-1" 
+             data-gs-x="0" data-gs-y="0"
+             data-gs-width="4" data-gs-height="2">
+            <div class="grid-stack-item-content"></div>
+
+        </div>
+    </div>
+</div>
+
+
+@section scripts
+{
+    @Styles.Render("~/Content/gridstack")
+    @Scripts.Render("~/bundles/gridstack")
+    <script type="text/javascript">
+        $(function () {
+            $('#div-extra-1').hide();
+            var options = {
+                cell_height: 80,
+                vertical_margin: 10
+            };
+            $('.grid-stack').gridstack(options);
+        });
+
+
+        var adicionaWidget = function () {
+            var grid = $('.grid-stack').data('gridstack');
+            debugger
+            var el = $('#div-extra-1');
+            el.show();
+            grid.add_widget(el, 0, 0, 3, 2, true);
+        };
+    </script>
+
+
+}
+
+
+
