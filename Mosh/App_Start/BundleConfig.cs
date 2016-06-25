@@ -16,7 +16,8 @@ namespace Mosh
             bundles.Add(new ScriptBundle("~/bundles/gridstack").Include(
                         "~/Scripts/jquery-ui-*",
                         "~/Scripts/lodash*",
-                        "~/Scripts/gridstack*"));
+                        "~/Scripts/gridstack*",
+                        "~/Scripts/Chart*"));
 
 
             // Use the development version of Modernizr to develop with and learn from. Then, when you're
